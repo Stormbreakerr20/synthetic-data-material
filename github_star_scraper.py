@@ -8,7 +8,7 @@ from tqdm import tqdm
 class Crawler:
     def __init__(self, threads: int, target: str) -> None:
         self.threads = threads
-        self.target = target.split('/')  # Split "Frikallo/MISST" into ["Frikallo", "MISST"]
+        self.target = target.split('/') 
         self.stargazers = []
         self.emails = []
         self.user_email = {}
